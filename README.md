@@ -23,10 +23,10 @@ Project
 |––– OnboardingService.swift
 |– Scenes
 |–– Onboarding
-|––– Onboarding.storyboard
 |––– OnboardingCoordinator.swift
-|––– OnboardingViewController.swift
 |––– OnboardingViewModel.swift
+|––– OnboardingViewController.swift
+|––– Onboarding.storyboard
 |– Resources
 ```
 
