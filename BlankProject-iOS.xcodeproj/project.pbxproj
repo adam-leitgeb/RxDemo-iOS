@@ -14,6 +14,9 @@
 		66698AD622044C6A00620BFE /* UIColor+Resources.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66698AD522044C6A00620BFE /* UIColor+Resources.swift */; };
 		66698ADD220450FC00620BFE /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 66698ADF220450FC00620BFE /* Localizable.strings */; };
 		66698AE32204560700620BFE /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66698AE22204560700620BFE /* Configuration.swift */; };
+		66698AE5220457D500620BFE /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66698AE4220457D500620BFE /* User.swift */; };
+		66698AE72204580400620BFE /* OnboardingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66698AE62204580400620BFE /* OnboardingService.swift */; };
+		66698AEA2204583700620BFE /* GeneralStateService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66698AE92204583700620BFE /* GeneralStateService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,9 @@
 		66698AD522044C6A00620BFE /* UIColor+Resources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Resources.swift"; sourceTree = "<group>"; };
 		66698ADE220450FC00620BFE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		66698AE22204560700620BFE /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
+		66698AE4220457D500620BFE /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		66698AE62204580400620BFE /* OnboardingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingService.swift; sourceTree = "<group>"; };
+		66698AE92204583700620BFE /* GeneralStateService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralStateService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +100,7 @@
 			isa = PBXGroup;
 			children = (
 				66698ADA22044F7700620BFE /* Base Services */,
+				66698AE82204581A00620BFE /* Scene Services */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -101,6 +108,7 @@
 		66698ACB22044B6100620BFE /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				66698AE4220457D500620BFE /* User.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -154,8 +162,17 @@
 		66698ADA22044F7700620BFE /* Base Services */ = {
 			isa = PBXGroup;
 			children = (
+				66698AE92204583700620BFE /* GeneralStateService.swift */,
 			);
 			path = "Base Services";
+			sourceTree = "<group>";
+		};
+		66698AE82204581A00620BFE /* Scene Services */ = {
+			isa = PBXGroup;
+			children = (
+				66698AE62204580400620BFE /* OnboardingService.swift */,
+			);
+			path = "Scene Services";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -270,9 +287,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				66698AE72204580400620BFE /* OnboardingService.swift in Sources */,
 				66698AD622044C6A00620BFE /* UIColor+Resources.swift in Sources */,
 				66698ACE22044B9500620BFE /* AppCoordinator.swift in Sources */,
+				66698AEA2204583700620BFE /* GeneralStateService.swift in Sources */,
 				66698AE32204560700620BFE /* Configuration.swift in Sources */,
+				66698AE5220457D500620BFE /* User.swift in Sources */,
 				66698AB722044B1000620BFE /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
