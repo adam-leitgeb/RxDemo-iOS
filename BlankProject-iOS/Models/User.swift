@@ -10,4 +10,5 @@ import Foundation
 
 struct User {
     let id: Int
+    // TODO: - Add properties.
 }

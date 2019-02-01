@@ -7,3 +7,7 @@
 //
 
 import Foundation
+
+enum Configuration {
+    // TODO: - Add configuration.
+}
