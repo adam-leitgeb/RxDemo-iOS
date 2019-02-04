@@ -67,7 +67,7 @@
 				66698AB622044B1000620BFE /* AppDelegate.swift */,
 				66698ACD22044B9500620BFE /* AppCoordinator.swift */,
 				66698AE22204560700620BFE /* Configuration.swift */,
-				66698ACC22044B6700620BFE /* Global */,
+				66F023E922088C2900C2DA16 /* Global */,
 				66698ACB22044B6100620BFE /* Models */,
 				66698AC822044B5100620BFE /* Resources */,
 				66698AC922044B5700620BFE /* Scenes */,
@@ -113,37 +113,6 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
-		66698ACC22044B6700620BFE /* Global */ = {
-			isa = PBXGroup;
-			children = (
-				66698AD022044C1300620BFE /* Cells */,
-				66698AD122044C1700620BFE /* Extensions */,
-				66698ACF22044C0900620BFE /* Views */,
-			);
-			path = Global;
-			sourceTree = "<group>";
-		};
-		66698ACF22044C0900620BFE /* Views */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
-		66698AD022044C1300620BFE /* Cells */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Cells;
-			sourceTree = "<group>";
-		};
-		66698AD122044C1700620BFE /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Extensions;
-			sourceTree = "<group>";
-		};
 		66698AD822044CB400620BFE /* Onboarding */ = {
 			isa = PBXGroup;
 			children = (
@@ -173,6 +142,37 @@
 				66698AE62204580400620BFE /* OnboardingService.swift */,
 			);
 			path = "Scene Services";
+			sourceTree = "<group>";
+		};
+		66F023E922088C2900C2DA16 /* Global */ = {
+			isa = PBXGroup;
+			children = (
+				66F023EC22088C3A00C2DA16 /* Cells */,
+				66F023EA22088C2F00C2DA16 /* Extensions */,
+				66F023EB22088C3500C2DA16 /* Views */,
+			);
+			path = Global;
+			sourceTree = "<group>";
+		};
+		66F023EA22088C2F00C2DA16 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		66F023EB22088C3500C2DA16 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		66F023EC22088C3A00C2DA16 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
