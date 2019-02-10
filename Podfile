@@ -1,12 +1,11 @@
 platform :ios, '11.0'
 # swift_version = '4.2'
 
-target 'BlankProject-iOS' do
+target 'TestProjectGlobalRadio' do
   use_frameworks!
 
   pod 'AKit'#, :path => '~/Developer/AKit'
-  pod 'CoreDataAdapter'#, :path => '~/Developer/CoreDataAdapter'
-  pod 'PromiseKit'
+  pod 'RxSwift',    '~> 4.0'
 
   # Build
   pod 'SwiftLint'
