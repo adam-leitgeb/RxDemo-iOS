@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		662E43EB220FF713002DFDAA /* GeneralStateService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 662E43EA220FF713002DFDAA /* GeneralStateService.swift */; };
 		66698AB722044B1000620BFE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66698AB622044B1000620BFE /* AppDelegate.swift */; };
 		66698ABE22044B1400620BFE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 66698ABD22044B1400620BFE /* Assets.xcassets */; };
 		66698AC122044B1400620BFE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66698ABF22044B1400620BFE /* LaunchScreen.storyboard */; };
@@ -15,12 +16,11 @@
 		66698ADD220450FC00620BFE /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 66698ADF220450FC00620BFE /* Localizable.strings */; };
 		66698AE32204560700620BFE /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66698AE22204560700620BFE /* Configuration.swift */; };
 		66698AE5220457D500620BFE /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66698AE4220457D500620BFE /* User.swift */; };
-		66698AE72204580400620BFE /* OnboardingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66698AE62204580400620BFE /* OnboardingService.swift */; };
-		66698AEA2204583700620BFE /* GeneralStateService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66698AE92204583700620BFE /* GeneralStateService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		66698AB322044B1000620BFE /* BlankProject-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BlankProject-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		662E43EA220FF713002DFDAA /* GeneralStateService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneralStateService.swift; sourceTree = "<group>"; };
+		66698AB322044B1000620BFE /* TestProjectGlobalRadio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestProjectGlobalRadio.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		66698AB622044B1000620BFE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		66698ABD22044B1400620BFE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		66698AC022044B1400620BFE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -30,8 +30,6 @@
 		66698ADE220450FC00620BFE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		66698AE22204560700620BFE /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
 		66698AE4220457D500620BFE /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
-		66698AE62204580400620BFE /* OnboardingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingService.swift; sourceTree = "<group>"; };
-		66698AE92204583700620BFE /* GeneralStateService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralStateService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,10 +43,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		662E43E6220FF6CF002DFDAA /* Home */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		662E43E7220FF6DF002DFDAA /* Global */ = {
+			isa = PBXGroup;
+			children = (
+				662E43E8220FF6E5002DFDAA /* Extensions */,
+			);
+			path = Global;
+			sourceTree = "<group>";
+		};
+		662E43E8220FF6E5002DFDAA /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		66698AAA22044B1000620BFE = {
 			isa = PBXGroup;
 			children = (
-				66698AB522044B1000620BFE /* BlankProject-iOS */,
+				66698AB522044B1000620BFE /* TestProjectGlobalRadio */,
 				66698AB422044B1000620BFE /* Products */,
 			);
 			sourceTree = "<group>";
@@ -56,24 +76,24 @@
 		66698AB422044B1000620BFE /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				66698AB322044B1000620BFE /* BlankProject-iOS.app */,
+				66698AB322044B1000620BFE /* TestProjectGlobalRadio.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		66698AB522044B1000620BFE /* BlankProject-iOS */ = {
+		66698AB522044B1000620BFE /* TestProjectGlobalRadio */ = {
 			isa = PBXGroup;
 			children = (
 				66698AB622044B1000620BFE /* AppDelegate.swift */,
 				66698ACD22044B9500620BFE /* AppCoordinator.swift */,
 				66698AE22204560700620BFE /* Configuration.swift */,
-				66F023E922088C2900C2DA16 /* Global */,
+				662E43E7220FF6DF002DFDAA /* Global */,
 				66698ACB22044B6100620BFE /* Models */,
 				66698AC822044B5100620BFE /* Resources */,
 				66698AC922044B5700620BFE /* Scenes */,
 				66698ACA22044B5C00620BFE /* Services */,
 			);
-			path = "BlankProject-iOS";
+			path = TestProjectGlobalRadio;
 			sourceTree = "<group>";
 		};
 		66698AC822044B5100620BFE /* Resources */ = {
@@ -90,8 +110,8 @@
 		66698AC922044B5700620BFE /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
-				66698AD922044CBD00620BFE /* Landing Page */,
-				66698AD822044CB400620BFE /* Onboarding */,
+				662E43E6220FF6CF002DFDAA /* Home */,
+				66698AD922044CBD00620BFE /* Launch */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -113,25 +133,18 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
-		66698AD822044CB400620BFE /* Onboarding */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Onboarding;
-			sourceTree = "<group>";
-		};
-		66698AD922044CBD00620BFE /* Landing Page */ = {
+		66698AD922044CBD00620BFE /* Launch */ = {
 			isa = PBXGroup;
 			children = (
 				66698ABF22044B1400620BFE /* LaunchScreen.storyboard */,
 			);
-			path = "Landing Page";
+			path = Launch;
 			sourceTree = "<group>";
 		};
 		66698ADA22044F7700620BFE /* Base Services */ = {
 			isa = PBXGroup;
 			children = (
-				66698AE92204583700620BFE /* GeneralStateService.swift */,
+				662E43EA220FF713002DFDAA /* GeneralStateService.swift */,
 			);
 			path = "Base Services";
 			sourceTree = "<group>";
@@ -139,48 +152,16 @@
 		66698AE82204581A00620BFE /* Scene Services */ = {
 			isa = PBXGroup;
 			children = (
-				66698AE62204580400620BFE /* OnboardingService.swift */,
 			);
 			path = "Scene Services";
-			sourceTree = "<group>";
-		};
-		66F023E922088C2900C2DA16 /* Global */ = {
-			isa = PBXGroup;
-			children = (
-				66F023EC22088C3A00C2DA16 /* Cells */,
-				66F023EA22088C2F00C2DA16 /* Extensions */,
-				66F023EB22088C3500C2DA16 /* Views */,
-			);
-			path = Global;
-			sourceTree = "<group>";
-		};
-		66F023EA22088C2F00C2DA16 /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Extensions;
-			sourceTree = "<group>";
-		};
-		66F023EB22088C3500C2DA16 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
-		66F023EC22088C3A00C2DA16 /* Cells */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		66698AB222044B1000620BFE /* BlankProject-iOS */ = {
+		66698AB222044B1000620BFE /* TestProjectGlobalRadio */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 66698AC522044B1400620BFE /* Build configuration list for PBXNativeTarget "BlankProject-iOS" */;
+			buildConfigurationList = 66698AC522044B1400620BFE /* Build configuration list for PBXNativeTarget "TestProjectGlobalRadio" */;
 			buildPhases = (
 				66698AAF22044B1000620BFE /* Sources */,
 				66698AB022044B1000620BFE /* Frameworks */,
@@ -192,9 +173,9 @@
 			);
 			dependencies = (
 			);
-			name = "BlankProject-iOS";
+			name = TestProjectGlobalRadio;
 			productName = "BlankProject-iOS";
-			productReference = 66698AB322044B1000620BFE /* BlankProject-iOS.app */;
+			productReference = 66698AB322044B1000620BFE /* TestProjectGlobalRadio.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -212,7 +193,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 66698AAE22044B1000620BFE /* Build configuration list for PBXProject "BlankProject-iOS" */;
+			buildConfigurationList = 66698AAE22044B1000620BFE /* Build configuration list for PBXProject "TestProjectGlobalRadio" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -225,7 +206,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				66698AB222044B1000620BFE /* BlankProject-iOS */,
+				66698AB222044B1000620BFE /* TestProjectGlobalRadio */,
 			);
 		};
 /* End PBXProject section */
@@ -287,10 +268,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				66698AE72204580400620BFE /* OnboardingService.swift in Sources */,
 				66698AD622044C6A00620BFE /* UIColor+Resources.swift in Sources */,
 				66698ACE22044B9500620BFE /* AppCoordinator.swift in Sources */,
-				66698AEA2204583700620BFE /* GeneralStateService.swift in Sources */,
+				662E43EB220FF713002DFDAA /* GeneralStateService.swift in Sources */,
 				66698AE32204560700620BFE /* Configuration.swift in Sources */,
 				66698AE5220457D500620BFE /* User.swift in Sources */,
 				66698AB722044B1000620BFE /* AppDelegate.swift in Sources */,
@@ -441,13 +421,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Z4V2RBG4M7;
-				INFOPLIST_FILE = "$(SRCROOT)/BlankProject-iOS/Resources/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/TestProjectGlobalRadio/Resources/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "io.leitgeb.BlankProject-iOS";
+				PRODUCT_BUNDLE_IDENTIFIER = io.leitgeb.TestProjectGlobalRadio;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -460,13 +440,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Z4V2RBG4M7;
-				INFOPLIST_FILE = "$(SRCROOT)/BlankProject-iOS/Resources/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/TestProjectGlobalRadio/Resources/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "io.leitgeb.BlankProject-iOS";
+				PRODUCT_BUNDLE_IDENTIFIER = io.leitgeb.TestProjectGlobalRadio;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -476,7 +456,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		66698AAE22044B1000620BFE /* Build configuration list for PBXProject "BlankProject-iOS" */ = {
+		66698AAE22044B1000620BFE /* Build configuration list for PBXProject "TestProjectGlobalRadio" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				66698AC322044B1400620BFE /* Debug */,
@@ -485,7 +465,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		66698AC522044B1400620BFE /* Build configuration list for PBXNativeTarget "BlankProject-iOS" */ = {
+		66698AC522044B1400620BFE /* Build configuration list for PBXNativeTarget "TestProjectGlobalRadio" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				66698AC622044B1400620BFE /* Debug */,
