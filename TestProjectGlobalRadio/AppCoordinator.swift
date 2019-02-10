@@ -6,7 +6,8 @@
 //  Copyright (c) 2019 Adam Leitgeb. All rights reserved.
 //
 
-import AKit
+import APIAdapter
+import BoilerplateKit
 
 final class AppCoordinator {
 
@@ -15,9 +16,10 @@ final class AppCoordinator {
     let window: UIWindow
 
     private lazy var serviceHolder: ServiceHolder = {
+        let apiAdapter = APIAdapter()
         let serviceHolder = ServiceHolder()
-        // TODO: - Add services to service holder's stack
-        
+        serviceHolder.add(HomeService.self) { ProductionHomeService(apiAdapter: apiAdapter) }
+
         return serviceHolder
     }()
 
@@ -32,14 +34,13 @@ final class AppCoordinator {
     // MARK: - Lifecycle
 
     func start() {
-        #if DEBUG
-        // TODO: - Debug code
-        #else
-        // TODO: - Production code
-        #endif
+        showHome()
     }
 
     // MARK: - Navigation
 
-    // TODO: - Add navigation methods
+    private func showHome() {
+        let coordinator = HomeCoordinator(window: window, serviceHolder: serviceHolder)
+        coordinator.start()
+    }
 }

@@ -1,7 +1,27 @@
-/* 
-  Localizable.strings
-  BlankProject-iOS
 
-  Created by Adam Leitgeb on 01/02/2019.
-  Copyright © 2019 Adam Leitgeb. All rights reserved.
-*/
+/* Close */
+"alert.action.close" = "";
+
+/* Logout */
+"alert.action.logout" = "";
+
+/* Remove */
+"alert.action.remove" = "";
+
+/* We are sorry, but server... */
+"APIAdapterError.invalidStructure" = "";
+
+/* We are sorry, but some unknown... */
+"APIAdapterError.unknown" = "";
+
+/* Email is not valid. */
+"ValidatorError.email" = "";
+
+/* Some of the required fields are empty. */
+"ValidatorError.isEmpty" = "";
+
+/* Invalid phone number format. */
+"ValidatorError.isValidPhoneNumber" = "";
+
+/* Password has to be at least 8 characters long. */
+"ValidatorError.password" = "";

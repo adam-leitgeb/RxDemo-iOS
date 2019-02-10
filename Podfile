@@ -4,7 +4,8 @@ platform :ios, '11.0'
 target 'TestProjectGlobalRadio' do
   use_frameworks!
 
-  pod 'AKit'#, :path => '~/Developer/AKit'
+  pod 'APIAdapter'#, :path => '~/Developer/APIAdapter'
+  pod 'BoilerplateKit', '0.1.0'#, :path => '~/Developer/BoilerplateKit'
   pod 'RxSwift',    '~> 4.0'
 
   # Build
