@@ -9,6 +9,7 @@
 import UIKit
 
 protocol HomeViewControllerInput: class {
+    func setFetchButton(isLoading: Bool)
 }
 
 final class HomeViewController: UIViewController {
@@ -17,7 +18,7 @@ final class HomeViewController: UIViewController {
 
     @IBOutlet private weak var numberOfFetchesLabel: UILabel!
     @IBOutlet private weak var responseCodeLabel: UILabel!
-    @IBOutlet private weak var fetchContentButton: UIButton!
+    @IBOutlet private weak var fetchContentButton: LoadingButton!
 
     // MARK: - Properties
 
@@ -41,9 +42,13 @@ final class HomeViewController: UIViewController {
 
     // MARK: - Actions
 
-    @IBAction func fetchButtonTapped(_ sender: UIButton) {
+    @IBAction func fetchContentButtonTapped(_ sender: LoadingButton) {
+        viewModel.fetchContentButtonTapped()
     }
 }
 
 extension HomeViewController: HomeViewControllerInput {
+    func setFetchButton(isLoading: Bool) {
+        isLoading ? fetchContentButton.startLoading() : fetchContentButton.stopLoading()
+    }
 }

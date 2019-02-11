@@ -12,6 +12,9 @@
 		662E43FC220FF9FF002DFDAA /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 662E43F6220FF9FF002DFDAA /* HomeViewModel.swift */; };
 		662E43FE220FF9FF002DFDAA /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 662E43F8220FF9FF002DFDAA /* Home.storyboard */; };
 		662E43FF220FF9FF002DFDAA /* HomeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 662E43F9220FF9FF002DFDAA /* HomeService.swift */; };
+		662E44022210B10F002DFDAA /* LoadingButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 662E44012210B10F002DFDAA /* LoadingButton.swift */; };
+		662E440422112695002DFDAA /* GeneralStateService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 662E440322112695002DFDAA /* GeneralStateService.swift */; };
+		662E440822112CF8002DFDAA /* APIAdapter+RxSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 662E440722112CF8002DFDAA /* APIAdapter+RxSwift.swift */; };
 		66698AB722044B1000620BFE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66698AB622044B1000620BFE /* AppDelegate.swift */; };
 		66698ABE22044B1400620BFE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 66698ABD22044B1400620BFE /* Assets.xcassets */; };
 		66698AC122044B1400620BFE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66698ABF22044B1400620BFE /* LaunchScreen.storyboard */; };
@@ -31,6 +34,9 @@
 		662E43F6220FF9FF002DFDAA /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		662E43F8220FF9FF002DFDAA /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		662E43F9220FF9FF002DFDAA /* HomeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeService.swift; sourceTree = "<group>"; };
+		662E44012210B10F002DFDAA /* LoadingButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingButton.swift; sourceTree = "<group>"; };
+		662E440322112695002DFDAA /* GeneralStateService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneralStateService.swift; sourceTree = "<group>"; };
+		662E440722112CF8002DFDAA /* APIAdapter+RxSwift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "APIAdapter+RxSwift.swift"; sourceTree = "<group>"; };
 		66698AB322044B1000620BFE /* TestProjectGlobalRadio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestProjectGlobalRadio.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		66698AB622044B1000620BFE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		66698ABD22044B1400620BFE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -70,6 +76,7 @@
 		662E43E7220FF6DF002DFDAA /* Global */ = {
 			isa = PBXGroup;
 			children = (
+				662E44002210B0F5002DFDAA /* Views */,
 				662E43E8220FF6E5002DFDAA /* Extensions */,
 			);
 			path = Global;
@@ -78,8 +85,17 @@
 		662E43E8220FF6E5002DFDAA /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				662E440722112CF8002DFDAA /* APIAdapter+RxSwift.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		662E44002210B0F5002DFDAA /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				662E44012210B10F002DFDAA /* LoadingButton.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		66698AAA22044B1000620BFE = {
@@ -138,6 +154,7 @@
 		66698ACA22044B5C00620BFE /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				662E440322112695002DFDAA /* GeneralStateService.swift */,
 				662E43F9220FF9FF002DFDAA /* HomeService.swift */,
 			);
 			path = Services;
@@ -325,10 +342,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				662E440822112CF8002DFDAA /* APIAdapter+RxSwift.swift in Sources */,
 				66698AD622044C6A00620BFE /* UIColor+Resources.swift in Sources */,
 				662E43FC220FF9FF002DFDAA /* HomeViewModel.swift in Sources */,
+				662E44022210B10F002DFDAA /* LoadingButton.swift in Sources */,
 				66698ACE22044B9500620BFE /* AppCoordinator.swift in Sources */,
 				662E43FB220FF9FF002DFDAA /* HomeViewController.swift in Sources */,
+				662E440422112695002DFDAA /* GeneralStateService.swift in Sources */,
 				66698AE32204560700620BFE /* Configuration.swift in Sources */,
 				66698AE5220457D500620BFE /* User.swift in Sources */,
 				662E43FF220FF9FF002DFDAA /* HomeService.swift in Sources */,

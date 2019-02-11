@@ -27,6 +27,12 @@ final class HomeViewModel {
     // MARK: - Actions
 
     func viewDidLoad() {
+        // TODO: - Load persisted data & present them
+    }
+
+    func fetchContentButtonTapped() {
+        viewController?.setFetchButton(isLoading: true)
+
         loadData()
     }
 

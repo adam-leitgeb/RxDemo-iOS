@@ -6,8 +6,14 @@
 //  Copyright © 2019 Adam Leitgeb. All rights reserved.
 //
 
-import Foundation
+import APIAdapter
 
-enum Configuration {
-    // TODO: - Add configuration.
+extension Request {
+    var token: String? {
+        return nil
+    }
+
+    var authentication: Authentication {
+        return .none
+    }
 }
