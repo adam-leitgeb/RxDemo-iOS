@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "66698AB222044B1000620BFE"
-               BuildableName = "TestProjectGlobalRadio.app"
-               BlueprintName = "TestProjectGlobalRadio"
-               ReferencedContainer = "container:TestProjectGlobalRadio.xcodeproj">
+               BuildableName = "RxDemo.app"
+               BlueprintName = "RxDemo"
+               ReferencedContainer = "container:RxDemo.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "66698AB222044B1000620BFE"
-            BuildableName = "TestProjectGlobalRadio.app"
-            BlueprintName = "TestProjectGlobalRadio"
-            ReferencedContainer = "container:TestProjectGlobalRadio.xcodeproj">
+            BuildableName = "RxDemo.app"
+            BlueprintName = "RxDemo"
+            ReferencedContainer = "container:RxDemo.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -56,9 +56,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "66698AB222044B1000620BFE"
-            BuildableName = "TestProjectGlobalRadio.app"
-            BlueprintName = "TestProjectGlobalRadio"
-            ReferencedContainer = "container:TestProjectGlobalRadio.xcodeproj">
+            BuildableName = "RxDemo.app"
+            BlueprintName = "RxDemo"
+            ReferencedContainer = "container:RxDemo.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -75,9 +75,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "66698AB222044B1000620BFE"
-            BuildableName = "TestProjectGlobalRadio.app"
-            BlueprintName = "TestProjectGlobalRadio"
-            ReferencedContainer = "container:TestProjectGlobalRadio.xcodeproj">
+            BuildableName = "RxDemo.app"
+            BlueprintName = "RxDemo"
+            ReferencedContainer = "container:RxDemo.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

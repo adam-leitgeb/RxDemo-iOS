@@ -2,8 +2,11 @@ PODS:
   - APIAdapter (1.0.3)
   - BartyCrouch (3.13.0)
   - BoilerplateKit (0.1.0)
-  - RxAtomic (4.4.0)
-  - RxSwift (4.4.0):
+  - RxAtomic (4.4.1)
+  - RxBlocking (4.4.1):
+    - RxAtomic (~> 4.4)
+    - RxSwift (~> 4.0)
+  - RxSwift (4.4.1):
     - RxAtomic (~> 4.4)
   - SwiftLint (0.30.1)
 
@@ -11,6 +14,7 @@ DEPENDENCIES:
   - APIAdapter
   - BartyCrouch
   - BoilerplateKit (= 0.1.0)
+  - RxBlocking
   - RxSwift (~> 4.0)
   - SwiftLint
 
@@ -20,6 +24,7 @@ SPEC REPOS:
     - BartyCrouch
     - BoilerplateKit
     - RxAtomic
+    - RxBlocking
     - RxSwift
     - SwiftLint
 
@@ -27,10 +32,11 @@ SPEC CHECKSUMS:
   APIAdapter: 5cf1ba4c64c92dd4812ed8efe6b520ef4a3c38f1
   BartyCrouch: 69e5e6ec67e77951dc1c22aa48abbf05d175b81c
   BoilerplateKit: db69e5789831ab95c3aae8d324e56d1817ef78d8
-  RxAtomic: eacf60db868c96bfd63320e28619fe29c179656f
-  RxSwift: 5976ecd04fc2fefd648827c23de5e11157faa973
+  RxAtomic: f8d6adc1ccb87a767811269e4875887bc74dbf19
+  RxBlocking: 5508e90d36ca2304632dc9378ece4e9b5d4bf656
+  RxSwift: 92fcf68dfef21f3e2ab1965363d9e7b3d787597e
   SwiftLint: a54bf1fe12b55c68560eb2a7689dfc81458508f7
 
-PODFILE CHECKSUM: a3c2a03901ae207116e4fca6f2fa0efe1ed507be
+PODFILE CHECKSUM: 98f07dccffc38fdc79b1a20c51752e8785d6dd1f
 
 COCOAPODS: 1.5.3
