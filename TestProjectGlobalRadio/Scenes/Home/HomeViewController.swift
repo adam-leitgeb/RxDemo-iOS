@@ -10,6 +10,8 @@ import UIKit
 
 protocol HomeViewControllerInput: class {
     func setFetchButton(isLoading: Bool)
+    func updateTimesFetchedValue(_ value: Int)
+    func updateResponseCodeValue(_ value: String)
 }
 
 final class HomeViewController: UIViewController {
@@ -50,5 +52,13 @@ final class HomeViewController: UIViewController {
 extension HomeViewController: HomeViewControllerInput {
     func setFetchButton(isLoading: Bool) {
         isLoading ? fetchContentButton.startLoading() : fetchContentButton.stopLoading()
+    }
+
+    func updateTimesFetchedValue(_ value: Int) {
+        numberOfFetchesLabel.text = String(value)
+    }
+
+    func updateResponseCodeValue(_ value: String) {
+        responseCodeLabel.text = value
     }
 }

@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import RxSwift
 
 final class HomeViewModel {
 
@@ -15,6 +16,8 @@ final class HomeViewModel {
     private let coordinator: HomeCoordinatorInput
     private weak var viewController: HomeViewControllerInput?
     private let homeService: HomeService
+
+    private let disposeBag = DisposeBag()
 
     // MARK: - Initialization
 
@@ -27,7 +30,7 @@ final class HomeViewModel {
     // MARK: - Actions
 
     func viewDidLoad() {
-        // TODO: - Load persisted data & present them
+        viewController?.updateTimesFetchedValue(homeService.timesFetched.value)
     }
 
     func fetchContentButtonTapped() {
@@ -39,6 +42,15 @@ final class HomeViewModel {
     // MARK: - Utilities
 
     private func loadData() {
-        // code..
+        homeService.loadResponseCodeObservable().subscribe { event in
+            switch event {
+            case .success(let responseCode):
+                self.viewController?.updateResponseCodeValue(responseCode)
+            case .error(let error):
+                self.coordinator.showAlert(for: error)
+            }
+            self.viewController?.setFetchButton(isLoading: false)
+        }
+        .disposed(by: disposeBag)
     }
 }
