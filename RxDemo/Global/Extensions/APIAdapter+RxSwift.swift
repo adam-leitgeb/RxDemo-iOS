@@ -1,6 +1,5 @@
 //
 //  APIAdapter+RxSwift.swift
-//  TestProjectGlobalRadio
 //
 //  Created by Adam Leitgeb on 11/02/2019.
 //  Copyright © 2019 Adam Leitgeb. All rights reserved.

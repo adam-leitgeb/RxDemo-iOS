@@ -37,7 +37,7 @@
 		662E44012210B10F002DFDAA /* LoadingButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingButton.swift; sourceTree = "<group>"; };
 		662E440322112695002DFDAA /* GeneralStateService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneralStateService.swift; sourceTree = "<group>"; };
 		662E440722112CF8002DFDAA /* APIAdapter+RxSwift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "APIAdapter+RxSwift.swift"; sourceTree = "<group>"; };
-		66698AB322044B1000620BFE /* TestProjectGlobalRadio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestProjectGlobalRadio.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		66698AB322044B1000620BFE /* RxDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RxDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		66698AB622044B1000620BFE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		66698ABD22044B1400620BFE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		66698AC022044B1400620BFE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -101,7 +101,7 @@
 		66698AAA22044B1000620BFE = {
 			isa = PBXGroup;
 			children = (
-				66698AB522044B1000620BFE /* TestProjectGlobalRadio */,
+				66698AB522044B1000620BFE /* RxDemo */,
 				66698AB422044B1000620BFE /* Products */,
 				900EFA06C8FE5FBFF5CEBB6C /* Pods */,
 				A9912A000F5786ED5B5C181C /* Frameworks */,
@@ -111,12 +111,12 @@
 		66698AB422044B1000620BFE /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				66698AB322044B1000620BFE /* TestProjectGlobalRadio.app */,
+				66698AB322044B1000620BFE /* RxDemo.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		66698AB522044B1000620BFE /* TestProjectGlobalRadio */ = {
+		66698AB522044B1000620BFE /* RxDemo */ = {
 			isa = PBXGroup;
 			children = (
 				66698AB622044B1000620BFE /* AppDelegate.swift */,
@@ -128,7 +128,7 @@
 				66698AC922044B5700620BFE /* Scenes */,
 				66698ACA22044B5C00620BFE /* Services */,
 			);
-			path = TestProjectGlobalRadio;
+			path = RxDemo;
 			sourceTree = "<group>";
 		};
 		66698AC822044B5100620BFE /* Resources */ = {
@@ -196,9 +196,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		66698AB222044B1000620BFE /* TestProjectGlobalRadio */ = {
+		66698AB222044B1000620BFE /* RxDemo */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 66698AC522044B1400620BFE /* Build configuration list for PBXNativeTarget "TestProjectGlobalRadio" */;
+			buildConfigurationList = 66698AC522044B1400620BFE /* Build configuration list for PBXNativeTarget "RxDemo" */;
 			buildPhases = (
 				F454201FFA44DEE6FAB1560D /* [CP] Check Pods Manifest.lock */,
 				66698AAF22044B1000620BFE /* Sources */,
@@ -212,9 +212,9 @@
 			);
 			dependencies = (
 			);
-			name = TestProjectGlobalRadio;
+			name = RxDemo;
 			productName = "BlankProject-iOS";
-			productReference = 66698AB322044B1000620BFE /* TestProjectGlobalRadio.app */;
+			productReference = 66698AB322044B1000620BFE /* RxDemo.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -232,7 +232,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 66698AAE22044B1000620BFE /* Build configuration list for PBXProject "TestProjectGlobalRadio" */;
+			buildConfigurationList = 66698AAE22044B1000620BFE /* Build configuration list for PBXProject "RxDemo" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -245,7 +245,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				66698AB222044B1000620BFE /* TestProjectGlobalRadio */,
+				66698AB222044B1000620BFE /* RxDemo */,
 			);
 		};
 /* End PBXProject section */
@@ -538,7 +538,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		66698AAE22044B1000620BFE /* Build configuration list for PBXProject "TestProjectGlobalRadio" */ = {
+		66698AAE22044B1000620BFE /* Build configuration list for PBXProject "RxDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				66698AC322044B1400620BFE /* Debug */,
@@ -547,7 +547,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		66698AC522044B1400620BFE /* Build configuration list for PBXNativeTarget "TestProjectGlobalRadio" */ = {
+		66698AC522044B1400620BFE /* Build configuration list for PBXNativeTarget "RxDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				66698AC622044B1400620BFE /* Debug */,
