@@ -31,6 +31,7 @@ final class HomeViewModel {
 
     func viewDidLoad() {
         viewController?.updateTimesFetchedValue(homeService.timesFetched.value)
+        subscribeFetchCounter()
     }
 
     func fetchContentButtonTapped() {
@@ -42,15 +43,27 @@ final class HomeViewModel {
     // MARK: - Utilities
 
     private func loadData() {
-        homeService.loadResponseCodeObservable().subscribe { event in
+        homeService.loadResponseCodeObservable().subscribe { [weak self] event in
             switch event {
             case .success(let responseCode):
-                self.viewController?.updateResponseCodeValue(responseCode)
+                self?.viewController?.updateResponseCodeValue(responseCode)
             case .error(let error):
-                self.coordinator.showAlert(for: error)
+                self?.coordinator.showAlert(for: error)
             }
-            self.viewController?.setFetchButton(isLoading: false)
+            self?.viewController?.setFetchButton(isLoading: false)
         }
         .disposed(by: disposeBag)
+    }
+
+    private func subscribeFetchCounter() {
+        homeService.timesFetched
+            .asObservable()
+            .subscribe { [weak self] newValue in
+                guard let newValue = newValue.element else {
+                    return
+                }
+                self?.viewController?.updateTimesFetchedValue(newValue)
+            }
+            .disposed(by: disposeBag)
     }
 }

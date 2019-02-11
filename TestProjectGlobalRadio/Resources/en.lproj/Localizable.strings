@@ -14,6 +14,12 @@
 /* We are sorry, but some unknown... */
 "APIAdapterError.unknown" = "We are sorry, but some unknown...";
 
+/* Times Fetched:  */
+"home.counter-prefix" = "Times Fetched: ";
+
+/* Response Code:\n */
+"home.response-prefix" = "Response Code:\n";
+
 /* Email is not valid. */
 "ValidatorError.email" = "Email is not valid.";
 

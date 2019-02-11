@@ -27,12 +27,17 @@ final class HomeViewController: UIViewController {
     weak var coordinator: HomeCoordinator?
     var viewModel: HomeViewModel!
 
+    private var responseLabelPrefix: String {
+        return NSLocalizedString("home.response-prefix", comment: "Response Code:\n")
+    }
+
     // MARK: - View lifecycle
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         setupNavigationBar()
+        setupStrings()
         viewModel.viewDidLoad()
     }
 
@@ -40,6 +45,10 @@ final class HomeViewController: UIViewController {
 
     func setupNavigationBar() {
         navigationController?.setNavigationBarHidden(true, animated: false)
+    }
+
+    func setupStrings() {
+        responseCodeLabel.text = responseLabelPrefix
     }
 
     // MARK: - Actions
@@ -51,14 +60,18 @@ final class HomeViewController: UIViewController {
 
 extension HomeViewController: HomeViewControllerInput {
     func setFetchButton(isLoading: Bool) {
-        isLoading ? fetchContentButton.startLoading() : fetchContentButton.stopLoading()
+        if isLoading {
+            fetchContentButton.startLoading()
+        } else {
+            fetchContentButton.stopLoading()
+        }
     }
 
     func updateTimesFetchedValue(_ value: Int) {
-        numberOfFetchesLabel.text = String(value)
+        numberOfFetchesLabel.text = NSLocalizedString("home.counter-prefix", comment: "Times Fetched: ") + String(value)
     }
 
     func updateResponseCodeValue(_ value: String) {
-        responseCodeLabel.text = value
+        responseCodeLabel.text = responseLabelPrefix + value
     }
 }
