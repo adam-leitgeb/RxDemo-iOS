@@ -1,27 +1,27 @@
 
 /* Close */
-"alert.action.close" = "";
+"alert.action.close" = "Close";
 
 /* Logout */
-"alert.action.logout" = "";
+"alert.action.logout" = "Logout";
 
 /* Remove */
-"alert.action.remove" = "";
+"alert.action.remove" = "Remove";
 
 /* We are sorry, but server... */
-"APIAdapterError.invalidStructure" = "";
+"APIAdapterError.invalidStructure" = "We are sorry, but server...";
 
 /* We are sorry, but some unknown... */
-"APIAdapterError.unknown" = "";
+"APIAdapterError.unknown" = "We are sorry, but some unknown...";
 
 /* Email is not valid. */
-"ValidatorError.email" = "";
+"ValidatorError.email" = "Email is not valid.";
 
 /* Some of the required fields are empty. */
-"ValidatorError.isEmpty" = "";
+"ValidatorError.isEmpty" = "Some of the required fields are empty.";
 
 /* Invalid phone number format. */
-"ValidatorError.isValidPhoneNumber" = "";
+"ValidatorError.isValidPhoneNumber" = "Invalid phone number format.";
 
 /* Password has to be at least 8 characters long. */
-"ValidatorError.password" = "";
+"ValidatorError.password" = "Password has to be at least 8 characters long.";
