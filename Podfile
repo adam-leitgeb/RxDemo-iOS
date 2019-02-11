@@ -1,7 +1,7 @@
 platform :ios, '11.0'
 # swift_version = '4.2'
 
-target 'TestProjectGlobalRadio' do
+target 'RxDemo' do
   use_frameworks!
 
   pod 'APIAdapter'#, :path => '~/Developer/APIAdapter'
